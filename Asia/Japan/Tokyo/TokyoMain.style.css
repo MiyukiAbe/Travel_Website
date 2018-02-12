@@ -1,0 +1,413 @@
+body {
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.headforall {
+	display: flex;
+	justify-content: space-between;
+	background-color: #ffffdd;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	height: auto;
+	top: 0;
+	left: 0;
+}
+
+.dropdown {
+	display: none;
+}
+
+.socialmedia a{
+	width: 100%;
+	height: auto;
+	margin-right: -70px;
+}
+
+.socialmedia img{
+	display: block;
+	width: 30%;
+	}
+
+.navheader{
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+
+li {
+	display: inline-block;
+}
+
+li a {
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+li a:hover{
+	color: red;
+}
+
+h1 {
+	font-size: 3rem;
+	font-family: 'Pacifico', cursive;
+}
+
+.sightSeeing, .food, .storyToTell{
+	margin-top: 10px;
+	border-top: 2px solid rgba(219, 219, 219, 0.7);
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.mapAndContents {
+	display: flex;
+	justify-content: space-around;
+	align-items: row;
+	flex-wrap: wrap;
+}
+#map {
+	width: 49%;
+	height: 600px;
+}
+
+#placeHolder {
+	width: 49%;
+	height: 600px;
+	background: #666;
+	color: white;
+	position: relative;
+}	
+
+#placeHolderContents {
+	z-index: 99;
+	position: absolute;
+    text-align: center;
+    margin-top: 30%;
+}
+
+
+#placeHolder article figure img {
+	width: 100%;
+	height: 600px;
+	position: relative;
+	opacity: 0.8;
+}
+
+#showImage {
+	width: 49%;
+	height: auto;
+	display: none;
+	overflow: hidden;
+	background: #666;
+	color: white;
+}
+
+.show {
+	height: 600px;
+	display: none;
+	overflow: hidden;
+	position: relative;
+}
+
+article {
+	display: flex;
+	justify-content: center;
+	align-items: column;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+figure {
+	margin: 0px;
+}
+
+figure img {
+	width: 100%;
+	height: 600px;
+	/*opacity: 0.5;*/
+}
+
+hgroup {
+	z-index: 99;
+	position: absolute;
+    top: 85%;
+    left:0%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+h2, h4{
+	margin: 5px;
+}
+h2 {
+	font-size: 1.2rem;
+}
+h4{
+	font-size: 0.8rem;
+}
+
+span {
+	color: red;
+	text-decoration: underline;
+}
+
+span:hover{
+	color: black;
+}
+
+
+.photoLibrary {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.photoLibrary div {
+	width: 16.6%;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+.photoLibrary div img {
+	width: 100%;
+	height: auto;
+}
+.photoLibrary div img:hover {
+	opacity: 0.7;
+
+}
+
+/*Slideshow*/
+
+.slideItem img{
+	width: 100%;
+	height: auto;
+
+}
+
+
+.slick-prev {
+    left: 80px;
+    z-index: 99;
+    top:40%;
+}
+
+.slick-next {
+    right: 80px;
+    z-index: 99;
+    top:40%;
+    color:black;
+}
+
+#mySlider{
+	padding: 20px 80px 30px 80px;
+}
+
+.slick-dots li button{
+	display:none;
+}
+
+h5 {
+	text-align: center;
+	margin-top: 0px;
+	font-size: 0.7rem;
+}
+
+/*Slideshow*/
+
+footer{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	background-color: #f7f8f9;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+}
+
+
+
+ 
+@media (max-width: 860px) {
+
+
+#map, #placeHolder, #placeHolder article figure img, .show, figure img {
+	height: 400px;
+}
+
+hgroup {
+    top: 80%;
+}
+
+#placeHolderContents {
+    margin-top: 30%;
+}
+
+@media (max-width: 750px) {
+
+
+h1 {
+	font-size: 1.7rem;
+}
+
+
+h2, h4{
+	font-size: : 0.8rem;
+}
+
+
+#map, #placeHolder, #placeHolder article figure img, .show, figure img {
+	height: 300px;
+}
+
+hgroup {
+    top: 70%;
+}
+
+.sightSeeing {
+	margin-top: 50px;
+}
+.entiresitehead, .headtitle, .navheader{
+	display: none;
+}
+
+.menuIcon {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 5px;
+}
+.dropbtn {
+ 	background-color: #ffffdd;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #4EADF6;
+}
+.menuIcon:hover {
+    background-color: black;
+}
+
+
+
+
+
+
+
+@media (max-width: 550px) {
+body, {
+	font-size: 4px;
+}
+
+#map {
+	display: none;
+}
+
+#placeHolder {
+	width: 100%;
+	height: 300px;
+
+}	
+
+#showImage {
+	width: 100%;
+}
+
+.photoLibrary {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+
+.photoLibrary div {
+	width: 25%;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+
+.slick-prev {
+    left: 40px;
+    top: 45%;
+}
+
+.slick-next {
+    right: 40px;
+    top: 45%;
+}
+
+#mySlider{
+	padding: 10px 40px;
+}
+
+footer {
+	font-size: 0.8rem;
+}
+
+/*
+p{
+	font-size: 1.5rem;
+}
+
+p span {
+	font-size: 0.8rem;
+}
+*/
+}
