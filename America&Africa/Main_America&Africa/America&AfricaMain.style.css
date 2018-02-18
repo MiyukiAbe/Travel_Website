@@ -251,6 +251,7 @@ h1{
 	background-image: webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Main_Europe/images/Oilseeds_Germany.jpg");
 	background: moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Main_Europe/images/Oilseeds_Germany.jpg");*/
 	height: 500px;
+	background-attachment: scroll;
 }
 
 .col-4{

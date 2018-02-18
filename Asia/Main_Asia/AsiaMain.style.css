@@ -243,11 +243,12 @@ h1{
 }
 
 .subheader {
-	background-image: url("../Main_Asia/images/Meiji_Shrine.jpg");
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Main_Asia/images/Meiji_Shrine.jpg");
-	background-image: webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Main_Asia/images/Meiji_Shrine.jpg");
-	background: moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Main_Asia/images/Meiji_Shrine.jpg");
+	background-image: url("../Main_Asia/images/Ise_bridge2.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Main_Asia/images/Ise_bridge2.jpg");
+	background-image: webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Main_Asia/images/Ise_bridge2.jpg");
+	background: moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Main_Asia/images/Ise_bridge2.jpg");
 	height: 500px;
+	background-attachment: scroll;
 }
 
 .col-4{
