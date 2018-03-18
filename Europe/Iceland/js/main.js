@@ -35,81 +35,18 @@ function switchingPictures() {
   }
 };
 
-
-
-// slide pictures from slick slider
-  // $('#mySlider').slick({
-  // 	infinite: true,
- 	// slidesToShow: 3,
-  // 	slidesToScroll: 3
-
-
-//If I have one pictures and would like to play auto use below
-	// autoplay: true
-//for 3 pictures sliding 
-  	//  infinite: true,
-  	// slidesToShow: 3,
-  	// slidesToScroll: 3
-
-//for 4 picturesdots: true,
-//   infinite: false,
-//   speed: 300,
-//   slidesToShow: 4,
-//   slidesToScroll: 4,
-//   responsive: [
-//     {
-//       breakpoint: 1024,
-//       settings: {
-//         slidesToShow: 3,
-//         slidesToScroll: 3,
-//         infinite: true,
-//         dots: true
-//       }
-//     },
-//     {
-//       breakpoint: 600,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 2
-//       }
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     }
-  
-//   ]
-// 
-
-
-  // centerMode: true,
-  // centerPadding: '60px',
-  // slidesToShow: 3,
-  // responsive: [
-  //   {
-  //     breakpoint: 768,
-  //     settings: {
-  //       arrows: false,
-  //       centerMode: true,
-  //       centerPadding: '40px',
-  //       slidesToShow: 3
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 480,
-  //     settings: {
-  //       arrows: false,
-  //       centerMode: true,
-  //       centerPadding: '40px',
-  //       slidesToShow: 1
-  //     }
-  //   }
-  // ]
-
-  // });
+$("button").on("click", switchingbox);
+function switchingbox (){
+  $("photoLibrary").show();
+  $(".picContainer").css("display", "none");
+    if($(this).hasClass("number1") ){
+      $(".box1").show();
+  } if($(this).hasClass("number2") ){
+      $(".box2").show().css("display", "flex");
+  } if($(this).hasClass("number3") ){
+      $(".box3").show().css("display", "flex");
+  }
+};
 
   //when user change windows size, reload the site.
 $(window).resize(function(){location.reload();});
